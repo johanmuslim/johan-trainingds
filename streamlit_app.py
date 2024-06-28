@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd 
 import requests
-from st_aggrid import AgGrid
+# from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
