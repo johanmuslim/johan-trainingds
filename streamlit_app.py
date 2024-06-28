@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd 
 import requests
-import plotly.express as px 
+# import plotly.express as px 
 import matplotlib.pyplot as plt
 # from st_aggrid import AgGrid
 
@@ -25,8 +25,8 @@ def main() :
   fig,ax = plt.subplots()
   plt.scatter(house['sqft_lot'],house['price'])
   st.pyplot(fig)
-  plotly_fig = px.scatter(house['sqft_lot'],house['price'])
-  st.plotly_chart(plotly_fig)
+  # plotly_fig = px.scatter(house['sqft_lot'],house['price'])
+  # st.plotly_chart(plotly_fig)
 
 
 if __name__ == '__main__' : 
