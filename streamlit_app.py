@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd 
 import requests
 # import plotly.express as px 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
@@ -22,9 +22,9 @@ def main() :
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
  
   #matplotlib chart 
-  fig,ax = plt.subplots()
-  plt.scatter(house['sqft_lot'],house['price'])
-  st.pyplot(fig)
+  # fig,ax = plt.subplots()
+  # plt.scatter(house['sqft_lot'],house['price'])
+  # st.pyplot(fig)
   # plotly_fig = px.scatter(house['sqft_lot'],house['price'])
   # st.plotly_chart(plotly_fig)
 
