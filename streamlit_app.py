@@ -2,6 +2,8 @@
 import streamlit as st
 import pandas as pd 
 import requests
+import plotly.express as px 
+import matplotlib.pyplot as plt
 # from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
@@ -18,9 +20,14 @@ def main() :
   st.dataframe(house)
   st.write('Metrics')
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
-  # st.write('Menampilkan Dataframe dengan St AgGrid')
-  # AgGrid(house)
-  # st.table([x for x in range(1,5)])
+ 
+  #matplotlib chart 
+  fig,ax = plt.subplots()
+  plt.scatter(house['sqft_lot'],house['price'])
+  st.pyplot(fig)
+  plotly_fig = px.scatter(house['sqft_lot'],house['price'])
+  st.plotly_chart(plotly_fig)
+
 
 if __name__ == '__main__' : 
   main()
