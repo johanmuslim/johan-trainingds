@@ -56,7 +56,7 @@ def main() :
     st.image("https://static.streamlit.io/examples/cat.jpg")
     
   #atau dengan assignment 
-  image_col1 = col1.image("https://static.streamlit.io/examples/cat.jpg")
+  # image_col1 = col1.image("https://static.streamlit.io/examples/cat.jpg")
 
   with col2:
     st.header("A dog")
@@ -68,7 +68,7 @@ def main() :
   #expander 
   #dengan with atau dengan assignment 
   expander = st.expander("Klik Untuk Detail ")
-  expander.write('Anda Telah Membuka Detail')
+  expander.write('Ini adalah contoh halaman untuk menampilkan bebebebeberapa gambar')
 
 
 if __name__ == '__main__' : 
